@@ -2,6 +2,8 @@
 <html>
     <head>
         <link href="index.css" rel="stylesheet">
+        <meta charset="utf-8"> <!-- enabling effective conversion of chars to bytes -->
+        <title>Password Generator</title>
     </head>
 
     <body>
@@ -11,8 +13,13 @@
                 <h2 class="highlight">random password</h2>
                 <p>Never use an insecure password again.</p>
             </div>
+
+            <div class="user-input">
+                <p class="inner-text">Enter desired length (6-18): </p>
+                <input type="text" class="length-input" id="length-el" onchange="generatePassword()">
+                <button onclick="generatePassword()">Generate passwords</button>
+            </div>
             
-            <button onclick="generatePassword()">Generate passwords</button>
     
             <hr>
     
